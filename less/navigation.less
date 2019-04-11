@@ -1,9 +1,28 @@
 // Navigation Styles here
 header {
+    .flex-box(column);
+}
+
+.banner {
     .flex-box();
+    justify-content: space-between;
+    margin: 2em 0;
 
     h1 {
-        text-transform: capitalize;
+        text-transform: @text-style;
+    }
+
+    nav {
+        .flex-box();
+        justify-content: space-around;
+        align-items: center;
+        width: 40%;
+
+
+        a {
+            font-size: 1.5rem;
+            text-transform: @text-style;
+        }
     }
 
 }
