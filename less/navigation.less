@@ -5,9 +5,11 @@ header {
 
 .banner {
     .flex-box();
+    .border-btm();
+    width: 100%;
     justify-content: space-between;
     padding: 2em 0;
-    border-bottom: 2px dashed @silver;
+
 
     h1 {
         text-transform: @text-style;
@@ -23,6 +25,8 @@ header {
         a {
             font-size: 1.5rem;
             text-transform: @text-style;
+            text-decoration: none;
+            color: @font-color;
         }
     }
 
