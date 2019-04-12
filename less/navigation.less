@@ -12,16 +12,30 @@
     width: 75%;
     margin: 0 auto;
 
+    @media @phone {
+        .flex-box(column);
+        width: 100%;
+    }
+
 
     h1 {
         text-transform: @text-style;
+
+        @media @phone {
+            text-align: center;
+        }
     }
 
     nav {
         .flex-box();
         justify-content: space-evenly;
         align-items: center;
-        width: 45%;
+
+
+        @media @phone {
+            justify-content: space-around;
+            width: 100%;
+        }
 
         a {
             font-size: 1.5rem;
