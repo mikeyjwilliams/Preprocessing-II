@@ -170,8 +170,10 @@ img {
 }
 .navigation {
   border-bottom: 2px dashed #C0C0C0;
-  width: 60%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
 }
 @media (max-width: 500px) {
   .navigation {
@@ -183,8 +185,7 @@ img {
   flex-direction: row;
   justify-content: space-between;
   padding: 2em 0;
-  width: 75%;
-  margin: 0 auto;
+  width: 80%;
 }
 @media (max-width: 500px) {
   .nav-container {
