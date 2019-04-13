@@ -87,9 +87,19 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      .flex-box(column);
+      align-content: center;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @phone {
+        width: 80%;
+      }
 
 
     }
