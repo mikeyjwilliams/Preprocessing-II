@@ -168,6 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
+}
 .navigation {
   border-bottom: 2px dashed #C0C0C0;
   display: flex;
@@ -192,7 +197,7 @@ img {
   .nav-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
   }
 }
 .nav-container h1 {
@@ -201,6 +206,7 @@ img {
 @media (max-width: 500px) {
   .nav-container h1 {
     text-align: center;
+    font-size: 3rem;
   }
 }
 .nav-container nav {
@@ -234,6 +240,13 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+  }
+}
 .home .main-content {
   display: flex;
   flex-direction: column;
@@ -250,33 +263,31 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media (max-width: 500px) {
-  .home .content-section {
-    flex-direction: column;
-  }
-}
-.home .content-section .text-content {
+.home .text-content {
   width: 48%;
   padding-right: 1%;
 }
 @media (max-width: 500px) {
-  .home .content-section .text-content {
+  .home .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
-    padding: 0 5%;
   }
 }
-.home .content-section .img-content {
+.home .text-content .img-content {
   width: 48%;
   padding-left: 1%;
 }
 @media (max-width: 500px) {
-  .home .content-section .img-content {
+  .home .text-content .img-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
-    padding: 0 2.5%;
-    margin: 0 auto;
   }
 }
-.home .content-section .img-content img {
+.home .text-content .img-content .rounded {
   border-radius: 10px;
 }
 .home .inverse-content {
@@ -304,9 +315,22 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }
 .home .content-pick .btn {
   font-size: 2rem;
