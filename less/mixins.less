@@ -1,1 +1,26 @@
 // Mixins in here
+
+.flex-box(@direction: row) {
+    display: flex;
+    flex-direction: @direction;
+}
+
+.border-btm(@color: @silver) {
+    border-bottom: 2px dashed @color;
+}
+
+.button(@color: @main-bg, @background-color: @btn-bg, @height: 0.75em, @width: 1.5em) {
+    color: @color;
+    background-color: @background-color;
+    height: @height;
+    width: @width;
+}
+
+.border-radius(@radius: @border-radius) {
+    border-radius: @radius;
+}
+
+
+.test(@color) {
+    border: 1px solid @color;
+}
